@@ -142,3 +142,8 @@ If your remote repo already has its own initial commit (e.g., created with a REA
     git pull origin main --allow-unrelated-histories
     # resolve the merge (usually keep your local content), then:
     git push -u origin main
+
+
+finally:
+
+    npm run dev
