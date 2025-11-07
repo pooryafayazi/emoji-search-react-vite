@@ -1,6 +1,6 @@
 // src\components\EmojiList.jsx
 import EmojiItem from "./EmojiItem.jsx";
-import { highlight } from "../lib/filter.jsx";
+import Highlighter from "./Highlighter.jsx";
 
 export default function EmojiList({ items, term }) {
   if (!items?.length) return <p>No results</p>;
@@ -10,8 +10,8 @@ export default function EmojiList({ items, term }) {
         <EmojiItem
           key={e.title}
           symbol={e.symbol}
-         // title={e.title}
-        //  label={highlight(e.title, term)}
+          title={e.title}
+          label={<Highlighter text={e.title} term={term} />}
           onCopy={() => {}}
         />
       ))}

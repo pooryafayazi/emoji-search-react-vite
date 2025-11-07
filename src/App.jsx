@@ -3,7 +3,7 @@ import { useEffect, useMemo, useState } from "react";
 import SearchBar from "./components/SearchBar.jsx";
 import EmojiList from "./components/EmojiList.jsx";
 import useDebounce from "./hooks/useDebounce.js";
-import { filterEmojis } from "./lib/filter.jsx";
+import { filterEmojis } from "./lib/filter.js";
 import "./App.css";
 
 
